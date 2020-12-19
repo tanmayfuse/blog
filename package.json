@@ -1,0 +1,15 @@
+{
+  "name": "demo1",
+  "version": "1.0.0",
+  "description": "demo with npm parse server module and nginx",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tanmay fuse",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "parse-server": "^4.5.0"
+  }
+}
