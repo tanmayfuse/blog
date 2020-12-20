@@ -12,7 +12,7 @@ const api = new ParseServer({
 app.use("/parse",api);
 
 app.get("/",(req,res)=>{
-    res.send("hello world");
+    res.send("this is pipeline demo");
 });
 app.get("/post",(req,res)=>{
     const GameScore = Parse.Object.extend("GameScore");
