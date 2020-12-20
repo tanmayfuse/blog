@@ -2,4 +2,12 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /demo/express
+    destination: /var/www
+hooks:
+  BeforeInstall:
+    - location: scripts/setup_nginx.sh
+      timeout: 300
+  ApplicationStart:
+    - location: scripts/start_application.sh
+      timeout: 300
+
