@@ -3,14 +3,14 @@ os: linux
 files:
   - source: /
     destination: /var/www
-# hooks:
-#   BeforeInstall:
-#     - location: scripts/setup_nginx.sh
-#       timeout: 300
-#   AfterInstall:
-#     - location: scripts/install_dependencies.sh
-#       timeout: 300
-#   ApplicationStart:
-#     - location: scripts/start_application.sh
-#       timeout: 300
+hooks:
+  BeforeInstall:
+    - location: scripts/setup_nginx.sh
+      timeout: 300
+  AfterInstall:
+    - location: scripts/install_dependencies.sh
+      timeout: 300
+  ApplicationStart:
+    - location: scripts/start_application.sh
+      timeout: 300
 
